@@ -1,7 +1,9 @@
-section
+div
 {
-    height: 150px;
-    background-color: #333;
+   background-color: dimgray;
+   height: 150px;
+   font:  Arial,Helvetica,sans-serif;
+    
 }
 ul 
 {
@@ -29,4 +31,18 @@ li a
 li a:hover 
 {
     background-color: #111;
+}
+#search 
+{
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border-bottom:0;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    float:right;
+    height:17px;
+    margin:.8em 0 0 .5em; 
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+    width:183px; 
 }

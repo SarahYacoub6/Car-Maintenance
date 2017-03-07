@@ -1,0 +1,42 @@
+ <h1>Edit Your Profile</h1>
+ <div>
+    <form (submit)="submit()">
+                                            <!--user Information-->
+        <h3>User Information</h3>
+        <label for="fname">First Name</label>
+        <input type="text" [(ngModel)]="profile.firstName" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" [(ngModel)]="profile.lastName"  id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="mobile">Mobile Number</label>
+        <input type="text" [(ngModel)]="profile.mobile"  id="mobile" name="mobile" placeholder="Your Mobile Number..">
+
+        <label for="address">Address</label>
+        <input type="text" [(ngModel)]="profile.address"  id="address" name="address" placeholder="Your Address..">
+
+        <label for="country">Country</label>
+        <select [(ngModel)]="profile.country"  id="country" name="country">
+          <option value="Egypt">Egypt</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+                                             <!--car Information-->
+        <h3>Car Information</h3>
+         <label for="plateNumber">Plate Number</label>
+        <input type="text" [(ngModel)]="profile.plateNumber"  id="plateNumber" name="plateNumber" placeholder="The Car Plate Number..">
+
+        <label for="Year">Year</label>
+        <input type="text" [(ngModel)]="profile.year"  id="Year" name="Year" placeholder="The Car Year..">
+
+        <label for="Model">Model</label>
+        <input type="text" [(ngModel)]="profile.model"  id="Model" name="Model" placeholder="The Car Model..">
+
+        <label for="Type">Type</label>
+        <input type="text" [(ngModel)]="profile.type"  id="Type" name="Type" placeholder="The Car Type..">
+        <input type="submit" value="Done">
+
+      </form>
+ </div>
+

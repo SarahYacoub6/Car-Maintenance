@@ -1,12 +1,15 @@
-#footer {
-				clear: left;
-				width: 100%;
-				background: #333;
-				text-align: center;
-				padding: 4px 0;
-                color: white;
-			}
-.innertube {
-				margin: 15px; /* Padding for content */
-				margin-top: 0;
-			}
+#footer
+ {
+	position:fixed;
+    bottom: 0;
+    width: 100%;
+	background:dimgray;
+	color: white;
+	text-align: center;
+}
+.innertube 
+{
+	margin: 15px; /* Padding for content */
+	margin-top: 0;
+
+}

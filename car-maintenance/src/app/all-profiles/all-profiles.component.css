@@ -1,0 +1,15 @@
+table, th, td 
+{
+    border: 1px solid black;
+    text-align: left;
+}
+table 
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+table thead tr td
+{
+    font-size: medium;
+    font-weight: bold;
+}

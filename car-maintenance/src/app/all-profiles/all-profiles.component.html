@@ -1,0 +1,38 @@
+<section>
+    <h2>All Profiles : </h2>
+    <table>
+       <thead>
+          <tr>
+             <td>FirstName</td>
+             <td>LastName</td>
+             <td>Mobile</td>
+             <td>Address</td>
+             <td>Country</td>
+             <td>PlateNumber</td>
+             <td>Year</td>
+             <td>Model</td>
+             <td>Type</td>
+             <td>Edit</td>
+             <td>Delete</td>       
+           </tr>
+         </thead>
+     <tbody id="Profiles">
+       <tr *ngFor="let profile of profiles">
+
+         <td>{{profile.firstName}}</td>
+         <td>{{profile.lastName}}</td>
+         <td>{{profile.mobile}}</td>
+         <td>{{profile.address}}</td>
+         <td>{{profile.country}}</td>
+         <td>{{profile.plateNumber}}</td>
+         <td>{{profile.year}}</td>
+         <td>{{profile.model}}</td>
+         <td>{{profile.type}}</td>
+         <td><a routerLink="/edit/{{profile.index}}" routerLinkActive="active">Edit</a></td>
+         <td><button (click)="delete(profile)">Delete</button></td>
+         
+       </tr>
+     </tbody>
+   </table>
+</section>
+
